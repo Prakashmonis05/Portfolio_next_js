@@ -19,14 +19,14 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="hidden md:block sticky top-0 z-50 bg-white/95 dark:bg-zinc-950/95 backdrop-blur-md border-b border-black/10 dark:border-white/10 shadow-sm py-3.5 transition-all">
+    <nav className="hidden md:block sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-black/10 shadow-sm py-3.5 transition-all">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 flex justify-between items-center">
         {/* Brand Logo */}
         <Link href="/" className="flex items-center gap-2.5 group">
           <div className="w-10 h-10 bg-[#ff0000] text-white font-extrabold text-lg rounded-xl flex items-center justify-center shadow-md shadow-red-500/20 group-hover:scale-105 transition-transform">
             P
           </div>
-          <span className="font-bold text-lg text-black dark:text-white tracking-tight">
+          <span className="font-bold text-lg text-black tracking-tight">
             Prakash Monis
           </span>
         </Link>
@@ -45,7 +45,7 @@ export default function Navbar() {
                   className={`px-3.5 py-2 rounded-lg font-medium text-sm transition-all relative block ${
                     isActive
                       ? "text-[#ff0000] bg-red-500/10 font-semibold"
-                      : "text-zinc-700 dark:text-zinc-300 hover:text-[#ff0000] hover:bg-red-500/5"
+                      : "text-zinc-700 hover:text-[#ff0000] hover:bg-red-500/5"
                   }`}
                 >
                   {link.name}

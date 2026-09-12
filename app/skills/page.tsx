@@ -9,14 +9,14 @@ export const metadata: Metadata = {
 
 export default function SkillsPage() {
   return (
-    <section className="py-16 px-6 sm:px-12 bg-white dark:bg-zinc-950">
+    <section className="py-16 px-6 sm:px-12 bg-white text-black min-h-[calc(100vh-80px)]">
       <div className="max-w-5xl mx-auto">
         {/* Title */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-black dark:text-white mb-2">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-black mb-2">
             My Skills
           </h2>
-          <p className="text-gray-500 dark:text-zinc-400 text-base">
+          <p className="text-gray-500 text-base">
             Technologies and tools I work with
           </p>
           <div className="w-16 h-1 bg-[#ff0000] mx-auto mt-3 rounded-full" />
@@ -33,7 +33,7 @@ export default function SkillsPage() {
                 {skillList.map((skill, sIdx) => (
                   <div
                     key={sIdx}
-                    className="p-3.5 sm:p-4 rounded-xl bg-gray-50 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 text-center font-semibold text-sm sm:text-base text-gray-800 dark:text-zinc-200 shadow-sm hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black hover:border-[#ff0000] hover:-translate-y-1 transition-all cursor-default"
+                    className="p-3.5 sm:p-4 rounded-xl bg-gray-50 border border-gray-200 text-center font-semibold text-sm sm:text-base text-gray-800 shadow-sm hover:bg-black hover:text-white hover:border-[#ff0000] hover:-translate-y-1 transition-all cursor-default"
                   >
                     {skill}
                   </div>

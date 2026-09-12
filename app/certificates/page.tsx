@@ -10,14 +10,14 @@ export const metadata: Metadata = {
 
 export default function CertificatesPage() {
   return (
-    <section className="py-16 px-6 sm:px-12 bg-white dark:bg-zinc-950">
+    <section className="py-16 px-6 sm:px-12 bg-white text-black min-h-[calc(100vh-80px)]">
       <div className="max-w-6xl mx-auto">
         {/* Title */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-black dark:text-white mb-2">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-black mb-2">
             Certifications
           </h2>
-          <p className="text-gray-500 dark:text-zinc-400 text-base">
+          <p className="text-gray-500 text-base">
             Professional credentials and verified achievements
           </p>
           <div className="w-16 h-1 bg-[#ff0000] mx-auto mt-3 rounded-full" />
@@ -28,10 +28,10 @@ export default function CertificatesPage() {
           {CERTIFICATES.map((cert, idx) => (
             <div
               key={idx}
-              className="bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-gray-200 dark:border-zinc-800 shadow-md hover:shadow-xl hover:-translate-y-1.5 transition-all flex flex-col justify-between"
+              className="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-1.5 transition-all flex flex-col justify-between"
             >
               <div>
-                <div className="relative w-full h-48 bg-gray-100 dark:bg-zinc-800">
+                <div className="relative w-full h-48 bg-gray-100">
                   <Image
                     src={cert.image}
                     alt={cert.title}
@@ -42,13 +42,13 @@ export default function CertificatesPage() {
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-lg font-bold text-black dark:text-white mb-1 leading-snug">
+                  <h3 className="text-lg font-bold text-black mb-1 leading-snug">
                     {cert.title}
                   </h3>
                   <p className="text-xs font-semibold text-[#ff0000] mb-3">
                     {cert.issuer} • {cert.year}
                   </p>
-                  <p className="text-sm text-gray-600 dark:text-zinc-300 leading-relaxed">
+                  <p className="text-sm text-gray-600 leading-relaxed">
                     {cert.description}
                   </p>
                 </div>

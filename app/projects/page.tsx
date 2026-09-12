@@ -10,14 +10,14 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <section className="py-16 px-6 sm:px-12 bg-white dark:bg-zinc-950">
+    <section className="py-16 px-6 sm:px-12 bg-white text-black min-h-[calc(100vh-80px)]">
       <div className="max-w-6xl mx-auto">
         {/* Title */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-black dark:text-white mb-2">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-black mb-2">
             My Projects
           </h2>
-          <p className="text-gray-500 dark:text-zinc-400 text-base">
+          <p className="text-gray-500 text-base">
             Detailed view of my work and implementations
           </p>
           <div className="w-16 h-1 bg-[#ff0000] mx-auto mt-3 rounded-full" />
@@ -28,9 +28,9 @@ export default function ProjectsPage() {
           {PROJECTS.map((project, idx) => (
             <div
               key={idx}
-              className="pb-12 border-b border-gray-200 dark:border-zinc-800 last:border-0 last:pb-0"
+              className="pb-12 border-b border-gray-200 last:border-0 last:pb-0"
             >
-              <h3 className="text-2xl sm:text-3xl font-bold text-black dark:text-white mb-4">
+              <h3 className="text-2xl sm:text-3xl font-bold text-black mb-4">
                 {project.title}
               </h3>
 
@@ -38,7 +38,7 @@ export default function ProjectsPage() {
               <ProjectSlider images={project.images} title={project.title} />
 
               {/* Description */}
-              <p className="text-gray-600 dark:text-zinc-300 text-base leading-relaxed my-4">
+              <p className="text-gray-600 text-base leading-relaxed my-4">
                 {project.description}
               </p>
 
@@ -47,7 +47,7 @@ export default function ProjectsPage() {
                 {project.technologies.map((tech, tIdx) => (
                   <span
                     key={tIdx}
-                    className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-gray-100 dark:bg-zinc-800 text-gray-800 dark:text-zinc-200 border border-gray-200 dark:border-zinc-700"
+                    className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-gray-100 text-gray-800 border border-gray-200"
                   >
                     {tech}
                   </span>
@@ -60,7 +60,7 @@ export default function ProjectsPage() {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-2.5 rounded-full border-2 border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black font-semibold text-sm transition-all"
+                  className="px-6 py-2.5 rounded-full border-2 border-black text-black hover:bg-black hover:text-white font-semibold text-sm transition-all"
                 >
                   View Code
                 </a>
