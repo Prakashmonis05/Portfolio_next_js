@@ -32,9 +32,9 @@ export const PROJECTS: Project[] = [
   {
     title: 'E-vote',
     description: 'A secure election management web app that helps organizations create, manage, and conduct elections with controlled access, smooth voting flow, and instant result visibility — built for low to mid-scale enterprise use.',
-    technologies: ['PHP', 'MYSQL', 'HTML', 'CSS', 'BOOTSTRAP', 'JAVASCRIPT'],
+    technologies: ['Next.js', 'Express', 'Prisma', 'Javascript',  'PostgreSQL'],
     github: '#',
-    demo: 'https://evote.infinityfree.me',
+    demo: 'https://evote.prakashm.dev',
     images: [
       '/images/evote1.png',
       '/images/evote2.png',
@@ -48,7 +48,7 @@ export const PROJECTS: Project[] = [
     description: 'An AI-powered support platform for farmers that provides smart problem resolution, real-time weather insights, and easy access to government schemes — designed to improve decision-making and productivity.',
     technologies: ['Flask', 'SqlAlchemy', 'HTML', 'CSS', 'SQLite'],
     github: 'https://github.com/Prakashmonis05/AgriReach.git',
-    demo: 'https://agrireach.onrender.com',
+    demo: 'https://agrireach.prakashm.dev',
     images: [
       '/images/agri1.png',
       '/images/agri2.png',
@@ -63,7 +63,7 @@ export const PROJECTS: Project[] = [
     description: 'A personal finance tracker that allows users to record expenses, categorize spending, and monitor budgets with a clean dashboard — helping users stay in control of money with clarity and consistency.',
     technologies: ['Flask', 'SqlAlchemy', 'HTML', 'CSS', 'PostgreSQL'],
     github: 'https://github.com/Prakashmonis05/Expense_Tracker_flask_app.git',
-    demo: 'https://expense-tracker-flask-app-1.onrender.com',
+    demo: 'https://expense.prakashm.dev',
     images: [
       '/images/ex1.png',
       '/images/ex2.png',
@@ -71,29 +71,17 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    title: 'WordWander',
-    description: 'A full-featured book e-commerce platform with product browsing, order tracking, and smooth customer flow — built to simulate real-world online shopping with practical backend logic.',
-    technologies: ['PHP', 'MySQL', 'HTML', 'CSS', 'JS'],
-    github: 'https://github.com/Prakashmonis05/WordWander.git',
-    demo: 'https://wordwander.wuaze.com',
-    images: [
-      '/images/word1.png',
-      '/images/word2.png',
-      '/images/word3.png',
-      '/images/word4.png'
-    ]
-  },
-  {
-    title: 'Shop X',
-    description: 'A MERN-based e-commerce application developed collaboratively, where I delivered the frontend experience — building responsive UI components, product flow screens, and user-friendly navigation.',
+    title: 'Veyro',
+    description: 'Veyro is a modern e-commerce platform that enables users to discover, browse, and purchase products across multiple categories. It provides a seamless shopping experience with product management, secure authentication, cart functionality, and order processing.',
     technologies: ['Reactjs', 'Nodejs', 'Expressjs', 'MongoDB'],
-    github: 'https://github.com/Shashidharak89/E-COMMERCE-MERN',
-    demo: 'https://e-commerce-mern-beta.vercel.app/',
+    github: 'https://github.com/Prakashmonis05/E-vote.git',
+    demo: 'https://veyro.prakashm.dev',
     images: [
       '/images/shop1.png',
       '/images/shop2.png',
       '/images/shop3.png',
-      '/images/shop4.png'
+      '/images/shop4.png',
+       '/images/shop5.png'
     ]
   },
   {
@@ -101,7 +89,7 @@ export const PROJECTS: Project[] = [
     description: 'A lightweight frontend-only book selling UI built using HTML, CSS, and JavaScript — focused on clean design, responsive layout, and smooth user interaction.',
     technologies: ['HTML', 'CSS', 'JS'],
     github: 'https://github.com/Prakashmonis05/WordWander-HTML-Version.git',
-    demo: 'https://prakashmonis05.github.io/WordWander-HTML-Version/',
+    demo: 'https://wordwander.prakashm.dev',
     images: [
       '/images/wand1.png',
       '/images/wand2.png',
@@ -111,14 +99,78 @@ export const PROJECTS: Project[] = [
 ];
 
 export const SKILLS_CATEGORIES: Record<string, string[]> = {
-  'Frontend': ['HTML5', 'CSS3', 'JavaScript', 'React', 'Bootstrap', 'Next.js', 'Tailwind CSS'],
-  'Backend': ['Python', 'Flask', 'PHP', 'Node.js', 'Express.js'],
-  'Database': ['MySQL', 'PostgreSQL', 'MongoDB', 'SQLite', 'SQLAlchemy'],
-  'Data Science': ['Pandas', 'NumPy', 'Scikit-learn', 'TensorFlow', 'Matplotlib'],
-  'Others': ['Problem Solving', 'Intermediate-DSA', 'System Design', 'Git / GitHub']
+  Frontend: [
+    'HTML5',
+    'CSS3',
+    'JavaScript',
+    'TypeScript',
+    'React',
+    'Next.js',
+    'Tailwind CSS',
+    'Bootstrap',
+    'Redux',
+    'Responsive Design'
+  ],
+
+  Backend: [
+    'Node.js',
+    'Express.js',
+    'Python',
+    'Flask',
+    'PHP',
+    'REST APIs',
+    'JWT Authentication',
+    'API Integration'
+  ],
+
+  Database: [
+    'PostgreSQL',
+    'MySQL',
+    'MongoDB',
+    'SQLite',
+    'Prisma ORM',
+    'SQLAlchemy',
+    'Database Design'
+  ],
+
+  'DevOps & Tools': [
+    'Git',
+    'GitHub',
+    'Docker',
+    'Vercel',
+    'Render',
+    'Postman',
+    'VS Code'
+  ],
+
+  'Core CS': [
+    'Data Structures & Algorithms',
+    'Problem Solving',
+    'Object-Oriented Programming',
+    'DBMS',
+    'Operating Systems',
+    'Computer Networks',
+    'System Design'
+  ]
 };
 
 export const CERTIFICATES: Certificate[] = [
+  {
+    title: 'Python Internship at Besant Technologies',
+    issuer: 'Besant Technologies',
+    year: '2025',
+    description: 'Completed a Python internship focused on developing practical programming skills, problem-solving, and application development.',
+    image: '/images/internship.jpeg',
+    credential: '#'
+  },
+  {
+    title: 'Python (Basic)',
+    issuer: 'Hackerrank',
+    year: '2025',
+    description: 'Demonstrated proficiency in Python fundamentals, including syntax, data types, control flow, functions, and basic problem-solving.',
+    image: '/images/python1.jpg',
+    credential: 'https://www.hackerrank.com/certificates/bf9f91041d9d'
+  },
   {
     title: 'Python for Beginners',
     issuer: 'Simplilearn',
@@ -158,7 +210,8 @@ export const CERTIFICATES: Certificate[] = [
     description: 'Covered containerization and orchestration basics including Docker images, containers, and Kubernetes concepts — improving deployment understanding and DevOps fundamentals.',
     image: '/images/certificate1.png',
     credential: '#'
-  }
+  },
+  
 ];
 
 export const SOCIAL_HANDLES: SocialHandle[] = [
