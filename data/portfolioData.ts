@@ -108,7 +108,6 @@ export const SKILLS_CATEGORIES: Record<string, string[]> = {
     'Next.js',
     'Tailwind CSS',
     'Bootstrap',
-    'Redux',
     'Responsive Design'
   ],
 
@@ -160,7 +159,7 @@ export const CERTIFICATES: Certificate[] = [
     issuer: 'Besant Technologies',
     year: '2025',
     description: 'Completed a Python internship focused on developing practical programming skills, problem-solving, and application development.',
-    image: '/images/internship.jpeg',
+    image: '/images/Internship1.jpeg',
     credential: '#'
   },
   {
